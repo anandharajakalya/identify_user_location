@@ -2,25 +2,25 @@
 
 #### PROBLEM STATETMENT:
 Given user tower data , identify the user's place of stay and work.Also, 
-identify the address of the specific user's place of work or stay
+extract the metatdata of the specific user's location such postcode,streetname and address
 
 
 #### METHOD
 
 ##### Datagathering
-Cell tower data - Mock user geolocation data is created 
+Cell tower data - Mock user geolocation data is created. 
 OSM - Openstreet map data is scraped and metadata such as building,name,street,postcode and geometry of the building is extracted
 
 ##### Datapreprocessing
-User's geolocation data (mock data) is preprocessed and binned to categorize morning and evening.The occurences of each user's location at the bins is used to find the user's work or resient location.
+User's geolocation data (mock data) is preprocessed and binned to categorize morning and evening.The occurences of each user's location at the bins is used to find the user's work or resident location.
 
 ##### Algorithm
 Point in Polygon Algorithm is used to identify if the geolocation coordinate of the user falls inside the geometry of the building
 
-#### Techniques involved
-Data Scraping,exploration and manipulating,PIP algorithm
+##### Techniques involved
+Data Scraping,exploration and manipulation,PIP algorithm
 
-#### Languages and tools used
+##### Languages and tools used
 Python, QGIS
 
 
